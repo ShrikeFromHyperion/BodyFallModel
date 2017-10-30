@@ -14,6 +14,7 @@ WidgetPlot::WidgetPlot(QWidget *parent)
     this->setLayout(pHBLayout);
 
     chart->createDefaultAxes();
+
     chart->setAnimationOptions(QChart::SeriesAnimations);
     chart->setAnimationDuration(3000);
 }
@@ -31,7 +32,6 @@ void WidgetPlot::draw(const QMap<double,double> answer)
     {
        dependence->append(key,answer.value(key));
     }
-
 
 
     chart->addSeries(dependence);

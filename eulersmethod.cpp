@@ -19,7 +19,6 @@ void EulersMethod::setModelParameters(double radius, double mass)
 {
     m = mass;
     r = radius;
-    S = r*r*3.14159265;
 }
 
 void EulersMethod::differentiation()
@@ -27,7 +26,7 @@ void EulersMethod::differentiation()
     int stepCount = (b / h) + 1;
     double currentTime = a + h;
 
-
+    S = r*r*3.14159265;
 
     double V, V_prev;
     V_prev = solve[a];

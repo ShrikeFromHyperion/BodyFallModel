@@ -6,15 +6,19 @@
 
 QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets charts
 
 TARGET = CourseWork
 TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    eulersmethod.cpp \
+    widgetplot.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    eulersmethod.h \
+    widgetplot.h
 
 FORMS    += mainwindow.ui
